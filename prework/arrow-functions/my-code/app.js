@@ -233,7 +233,5 @@ console.log(joe.scopeArrow());
 // 2. What is "this" when joe.scopeArrow() is invoked?
 //The browser, the global window object.
 // 3. Explain why "this" is different when an arrow function is used.
-//Because arrow functions retain the this value of the enclosing functional scope.
-//there is no scope for this inside arrow function thats why show window
-//Arrow functions do not have a prototype property
-///Arrow functions establish "this" based on the scope the Arrow function is defined within.
+//Because the arrow functions won't bind the this with the object that call that fun (It will give us
+//the global object which is the window obj) So we don't use the => with constructors and proto.
